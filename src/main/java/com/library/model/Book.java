@@ -1,9 +1,8 @@
 package com.library.model;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Data;
+import java.util.Objects;
 
-@Data
 public class Book {
 
     @SerializedName("name")
@@ -20,4 +19,24 @@ public class Book {
 
     @SerializedName("publisher")
     private String publisher;
+
+    public String getName() { return name; }
+    public String getAuthor() { return author; }
+    public int getPublishingYear() { return publishingYear; }
+    public String getIsbn() { return isbn; }
+    public String getPublisher() { return publisher; }
+
+    // Нужно для distinct() в задании 2
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(isbn, book.isbn);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(isbn);
+    }
 }

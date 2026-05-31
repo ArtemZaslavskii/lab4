@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Task1",
+            "request": "launch",
+            "mainClass": "com.library.Task1",
+            "projectName": "lab4"
+        },
+        {
+            "type": "java",
+            "name": "Task2",
+            "request": "launch",
+            "mainClass": "com.library.Task2",
+            "projectName": "lab4"
+        },
+        {
+            "type": "java",
+            "name": "Task3",
+            "request": "launch",
+            "mainClass": "com.library.Task3",
+            "projectName": "lab4"
+        },
+        {
+            "type": "java",
+            "name": "Task4",
+            "request": "launch",
+            "mainClass": "com.library.Task4",
+            "projectName": "lab4"
+        },
+        {
+            "type": "java",
+            "name": "Task5",
+            "request": "launch",
+            "mainClass": "com.library.Task5",
+            "projectName": "lab4"
+        },
+        {
+            "type": "java",
+            "name": "Task6",
+            "request": "launch",
+            "mainClass": "com.library.Task6",
+            "projectName": "lab4"
+        }
+    ]
+}
